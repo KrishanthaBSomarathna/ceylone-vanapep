@@ -104,8 +104,10 @@ section { position: relative; }
   gap: 10px;
   padding: 14px 26px;
   border-radius: 4px;
+  font-family: var(--font-body);
   font-weight: 600;
   font-size: 0.92rem;
+  line-height: 1;
   letter-spacing: 0.4px;
   border: 2px solid transparent;
   cursor: pointer;
@@ -300,13 +302,13 @@ section { position: relative; }
 .leaf-panel {
   background:
     linear-gradient(160deg, rgba(15,25,10,0.15), rgba(10,16,7,0.4)),
-    url("assets/images/vanilla-flower.jpg") center/cover no-repeat;
+    url("../assets/images/vanilla-flower.jpg") center/cover no-repeat;
   position: relative;
 }
 .leaf-panel.light {
   background:
     linear-gradient(160deg, rgba(255,255,255,0.05), rgba(20,30,12,0.15)),
-    url("assets/images/hero-hills.jpg") center/cover no-repeat;
+    url("../assets/images/hero-hills.jpg") center/cover no-repeat;
 }
 .leaf-panel.gold {
   background:
@@ -316,7 +318,7 @@ section { position: relative; }
 .leaf-panel.sunset {
   background:
     linear-gradient(180deg, rgba(30,20,5,0.05) 0%, rgba(10,16,7,0.65) 100%),
-    url("assets/images/cargo-ship-sunset.jpg") center/cover no-repeat;
+    url("../assets/images/cargo-ship-sunset.jpg") center/cover no-repeat;
 }
 .leaf-panel .deco-icon {
   position: absolute;
@@ -329,7 +331,7 @@ section { position: relative; }
   position: relative;
   background:
     linear-gradient(100deg, rgba(10,18,6,0.9) 0%, rgba(10,18,6,0.62) 45%, rgba(10,18,6,0.32) 75%),
-    url("assets/images/hero-hills.jpg") center/cover no-repeat;
+    url("../assets/images/hero-hills.jpg") center/cover no-repeat;
   color: #fff;
   padding: 100px 0 90px;
   overflow: hidden;
@@ -358,7 +360,7 @@ section { position: relative; }
   min-height: 380px;
   position: relative;
   box-shadow: 0 30px 60px rgba(0,0,0,0.4);
-  background: url("assets/images/pepper-bowl.jpg") center/cover no-repeat;
+  background: url("../assets/images/pepper-bowl.jpg") center/cover no-repeat;
   overflow: hidden;
 }
 .hero-visual::before {
@@ -426,10 +428,10 @@ section { position: relative; }
 }
 .product-card > * { position: relative; z-index: 2; }
 .product-card.pepper-bg {
-  background: url("assets/images/pepper-bowl.jpg") center/cover no-repeat;
+  background: url("../assets/images/pepper-bowl.jpg") center/cover no-repeat;
 }
 .product-card.vanilla-bg {
-  background: url("assets/images/vanilla-pods.jpg") center/cover no-repeat;
+  background: url("../assets/images/vanilla-pods.jpg") center/cover no-repeat;
 }
 .product-badge {
   width: 46px; height: 46px; border-radius: 50%;
@@ -547,7 +549,7 @@ section { position: relative; }
 .values-band {
   background:
     linear-gradient(180deg, rgba(22,37,15,0.93), rgba(22,37,15,0.93)),
-    url("assets/images/berries-branch.jpg") center/cover no-repeat;
+    url("../assets/images/berries-branch.jpg") center/cover no-repeat;
   color: #fff;
   padding: 64px 0;
 }
@@ -611,7 +613,7 @@ section { position: relative; }
   min-height: 220px;
   background:
     linear-gradient(150deg, rgba(20,15,5,0.1), rgba(10,16,7,0.5)),
-    url("assets/images/burlap-sacks.jpg") center/cover no-repeat;
+    url("../assets/images/burlap-sacks.jpg") center/cover no-repeat;
 }
 
 /* -------------------- Quality & process page -------------------- */
@@ -699,11 +701,11 @@ section { position: relative; }
   background-size: cover;
   background-position: center;
 }
-.pack-media.pk-1 { background-image: linear-gradient(150deg, rgba(20,15,5,0.05), rgba(10,16,7,0.35)), url("assets/images/burlap-sacks.jpg"); }
-.pack-media.pk-2 { background-image: linear-gradient(150deg, rgba(20,15,5,0.05), rgba(10,16,7,0.35)), url("assets/images/seed-sack.jpg"); }
-.pack-media.pk-3 { background-image: linear-gradient(150deg, rgba(20,15,5,0.05), rgba(10,16,7,0.35)), url("assets/images/pepper-bowl.jpg"); }
-.pack-media.pk-4 { background-image: linear-gradient(150deg, rgba(20,15,5,0.05), rgba(10,16,7,0.35)), url("assets/images/vanilla-pods.jpg"); }
-.pack-media.pk-5 { background-image: linear-gradient(150deg, rgba(20,15,5,0.05), rgba(10,16,7,0.35)), url("assets/images/hero-hills.jpg"); }
+.pack-media.pk-1 { background-image: linear-gradient(150deg, rgba(20,15,5,0.05), rgba(10,16,7,0.35)), url("../assets/images/burlap-sacks.jpg"); }
+.pack-media.pk-2 { background-image: linear-gradient(150deg, rgba(20,15,5,0.05), rgba(10,16,7,0.35)), url("../assets/images/seed-sack.jpg"); }
+.pack-media.pk-3 { background-image: linear-gradient(150deg, rgba(20,15,5,0.05), rgba(10,16,7,0.35)), url("../assets/images/pepper-bowl.jpg"); }
+.pack-media.pk-4 { background-image: linear-gradient(150deg, rgba(20,15,5,0.05), rgba(10,16,7,0.35)), url("../assets/images/vanilla-pods.jpg"); }
+.pack-media.pk-5 { background-image: linear-gradient(150deg, rgba(20,15,5,0.05), rgba(10,16,7,0.35)), url("../assets/images/hero-hills.jpg"); }
 .pack-card h5 { font-size: 0.88rem; margin: 16px 0 4px; }
 .pack-card p { font-size: 0.76rem; color: var(--text-mid); margin: 0; padding: 0 10px; }
 
@@ -809,3 +811,113 @@ section { position: relative; }
   font-size: 0.92rem;
 }
 .mobile-nav a.active { color: var(--green); }
+
+/* -------------------- Product details modal -------------------- */
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 44px 20px;
+  overflow-y: auto;
+  background: rgba(8, 12, 6, 0.62);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+.modal-overlay[hidden] { display: none; }
+.modal-overlay.open { opacity: 1; }
+
+.modal {
+  position: relative;
+  width: 100%;
+  max-width: 720px;
+  background: var(--white);
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 30px 70px rgba(8, 12, 6, 0.45);
+  transform: translateY(14px);
+  transition: transform 0.2s ease;
+}
+.modal-overlay.open .modal { transform: translateY(0); }
+
+.modal-close {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  z-index: 2;
+  width: 38px;
+  height: 38px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.92);
+  color: var(--text-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+.modal-close:hover { background: var(--cream-2); }
+.modal-close svg { width: 20px; height: 20px; }
+
+.modal-media {
+  height: 200px;
+  background-color: var(--cream-2);
+  background-size: cover;
+  background-position: center;
+}
+
+.modal-body { padding: 28px 34px 34px; }
+.modal-body h3 {
+  font-family: var(--font-head);
+  font-size: 1.7rem;
+  color: var(--dark-green);
+  margin: 8px 0 12px;
+}
+.modal-body h4 {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+  color: var(--green);
+  margin: 24px 0 12px;
+}
+.modal-body > p { color: var(--text-mid); margin: 0; font-size: 0.92rem; }
+
+.modal-tags { display: flex; flex-wrap: wrap; gap: 8px; }
+.modal-tags span {
+  background: var(--cream);
+  border: 1px solid var(--border-soft);
+  border-radius: 999px;
+  padding: 6px 14px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.spec-list {
+  border: 1px solid var(--border-soft);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.spec-list li {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 11px 15px;
+  font-size: 0.84rem;
+}
+.spec-list li:nth-child(odd) { background: var(--cream); }
+.spec-list li span:first-child { color: var(--text-mid); }
+.spec-list li span:last-child { font-weight: 600; color: var(--text-dark); text-align: right; }
+
+.modal-body .btn { margin-top: 26px; }
+
+@media (max-width: 640px) {
+  .modal-overlay { padding: 18px 12px; }
+  .modal-body { padding: 22px 20px 26px; }
+  .modal-media { height: 160px; }
+  .modal-body h3 { font-size: 1.45rem; }
+}
